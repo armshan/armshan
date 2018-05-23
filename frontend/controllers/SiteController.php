@@ -75,6 +75,10 @@ class SiteController extends Controller
         return $this->render('index');
     }
 
+    public function actionTest()
+    {
+        return "测试分支对应情况";
+    }
     /**
      * Logs in a user.
      *
