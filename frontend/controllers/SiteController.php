@@ -77,7 +77,7 @@ class SiteController extends Controller
 
     public function actionTest()
     {
-        return "测试分支对应情况";
+        return "测试分支情况";
     }
 
     /**
