@@ -36,14 +36,18 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+            'suffix' => '.html',
             'rules' => [
+                'posts' => 'post/index',
+                'post/<id:\d+>' => 'post/view',
+                '<controller:(post|comment)>/<id:\d+>/<action:(create|update|delete)>' => '<controller>/<action>',
+                'DELETE <controller:\w+>/<id:\d+>' => '<controller>/delete',
+                'http://<user:\w+>.digpage.com/<lang:\w+>/profile' => 'user/profile',
             ],
         ],
-        */
     ],
     'params' => $params,
 ];
