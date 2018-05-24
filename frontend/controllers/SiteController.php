@@ -79,7 +79,6 @@ class SiteController extends Controller
     {
         return "测试分支情况";
     }
-
     /**
      * Logs in a user.
      *
