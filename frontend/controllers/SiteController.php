@@ -77,7 +77,7 @@ class SiteController extends Controller
 
     public function actionTest()
     {
-        return "测试分支对应情况";
+        return "测试分支情况";
     }
     /**
      * Logs in a user.
@@ -89,7 +89,6 @@ class SiteController extends Controller
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
-
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             return $this->goBack();
