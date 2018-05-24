@@ -10,7 +10,7 @@ return [
             'username' => 'root',
             'password' => '',
             'charset' => 'utf8',
-        ],
+        ],  
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
             'viewPath' => '@common/mail',
