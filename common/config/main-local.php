@@ -3,12 +3,12 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=yii2advanced',
+            'dsn' => 'mysql:host=localhost;dbname=arms_han',
          // 'dsn' => 'sqlsrv:Server=10.110.30.9;Database=jw_weixin', //pdo_sqlser 方式 windows连接
          // 'dsn' => 'sqlsrv:Server=sqlserver.rdssdgjv3k5uoz7.rds.bj.baidubce.com;Database=jw_weixin', //pdo_sqlser 方式 windows连接
          // 'dsn' => 'dblib:host=sqlserver.rdssdgjv3k5uoz7.rds.bj.baidubce.com;dbname=jw_weixin', //pdo_dblib 方式 linux连接
             'username' => 'root',
-            'password' => '',
+            'password' => '123456',
             'charset' => 'utf8',
         ],  
         'mailer' => [

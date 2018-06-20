@@ -77,7 +77,7 @@ class SiteController extends Controller
 
     public function actionTest()
     {
-        return "测试分支情况";
+        return $this->render('test');
     }
     /**
      * Logs in a user.
