@@ -1,6 +1,7 @@
 <?php
 namespace app\models;
 
+use common\models\User;
 use Yii;
 use yii\base\Model;
 
@@ -39,7 +40,7 @@ class LoginForm extends Model
 
     public function onGenerateApiToken()
     {
-        $this->_user->generateApiToken();
+        $this->_user->generateAuthKey();
         $this->_user->save(false);
     }
 
